@@ -3,7 +3,7 @@
 ## Overview
 
 This project simulates the classic "Sleeping Barber" synchronization problem, adapted to a Teaching Assistant (TA) and students scenario, using multi-threading to demonstrate thread synchronization in a concurrent environment. Students arrive at random intervals and attempt to get help from the TA; if fewer than 5 students are waiting, they sit and wait; otherwise, they leave. The TA helps one student at a time, sleeps if no students are waiting (with a 3-second timeout before terminating), and uses mutexes and condition variables to coordinate access and signaling without race conditions.
-
+ 
 The simulation runs with 10 students and tracks metrics like waiting students and total helped, ensuring proper synchronization to prevent issues like multiple students being helped simultaneously or the TA waking unnecessarily.
 
 ## Key Features
